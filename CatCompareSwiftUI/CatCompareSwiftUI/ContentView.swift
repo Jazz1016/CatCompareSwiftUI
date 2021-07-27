@@ -8,25 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var viewModel: CatCompareViewModel
+    
     var body: some View {
-        
         HStack {
             Text("Hello, world!")
         }
-        
-        VStack {
-            
+        .onAppear {
+            viewModel.getCats()
         }
-        
-        ZStack {
-            
-        }
-        
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(viewModel: CatCompareViewModel())
     }
 }

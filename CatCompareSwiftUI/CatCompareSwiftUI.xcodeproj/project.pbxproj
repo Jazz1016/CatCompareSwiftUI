@@ -11,9 +11,10 @@
 		0D8D8D6F26B09E940013FB63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8D8D6E26B09E940013FB63 /* ContentView.swift */; };
 		0D8D8D7126B09E960013FB63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D8D8D7026B09E960013FB63 /* Assets.xcassets */; };
 		0D8D8D7426B09E960013FB63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D8D8D7326B09E960013FB63 /* Preview Assets.xcassets */; };
-		0D8D8D7F26B0A4D70013FB63 /* CatBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8D8D7E26B0A4D70013FB63 /* CatBreed.swift */; };
+		0D8D8D7F26B0A4D70013FB63 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8D8D7E26B0A4D70013FB63 /* Cat.swift */; };
 		0D8D8D8126B0A5270013FB63 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8D8D8026B0A5270013FB63 /* NetworkManager.swift */; };
 		0D8D8D8426B0A6450013FB63 /* CatError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8D8D8326B0A6450013FB63 /* CatError.swift */; };
+		9BAA23B026B0B910008216DD /* CatCompareViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAA23AF26B0B910008216DD /* CatCompareViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,9 +24,10 @@
 		0D8D8D7026B09E960013FB63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D8D8D7326B09E960013FB63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0D8D8D7526B09E960013FB63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0D8D8D7E26B0A4D70013FB63 /* CatBreed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreed.swift; sourceTree = "<group>"; };
+		0D8D8D7E26B0A4D70013FB63 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
 		0D8D8D8026B0A5270013FB63 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		0D8D8D8326B0A6450013FB63 /* CatError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatError.swift; sourceTree = "<group>"; };
+		9BAA23AF26B0B910008216DD /* CatCompareViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatCompareViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,15 +60,14 @@
 		0D8D8D6B26B09E940013FB63 /* CatCompareSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				0D8D8D8226B0A6340013FB63 /* Helper & Extension */,
-				0D8D8D7D26B09EC30013FB63 /* Network Call */,
-				0D8D8D7C26B09EBE0013FB63 /* Views */,
+				0D8D8D7D26B09EC30013FB63 /* Network */,
 				0D8D8D7B26B09EA60013FB63 /* Model */,
+				0D8D8D7C26B09EBE0013FB63 /* ViewModel */,
+				0D8D8D8226B0A6340013FB63 /* Helper & Extension */,
+				9BAA23AE26B0B858008216DD /* Resources */,
+				0D8D8D7226B09E960013FB63 /* Preview Content */,
 				0D8D8D6C26B09E940013FB63 /* CatCompareSwiftUIApp.swift */,
 				0D8D8D6E26B09E940013FB63 /* ContentView.swift */,
-				0D8D8D7026B09E960013FB63 /* Assets.xcassets */,
-				0D8D8D7526B09E960013FB63 /* Info.plist */,
-				0D8D8D7226B09E960013FB63 /* Preview Content */,
 			);
 			path = CatCompareSwiftUI;
 			sourceTree = "<group>";
@@ -82,24 +83,25 @@
 		0D8D8D7B26B09EA60013FB63 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0D8D8D7E26B0A4D70013FB63 /* CatBreed.swift */,
+				0D8D8D7E26B0A4D70013FB63 /* Cat.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		0D8D8D7C26B09EBE0013FB63 /* Views */ = {
+		0D8D8D7C26B09EBE0013FB63 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				9BAA23AF26B0B910008216DD /* CatCompareViewModel.swift */,
 			);
-			path = Views;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		0D8D8D7D26B09EC30013FB63 /* Network Call */ = {
+		0D8D8D7D26B09EC30013FB63 /* Network */ = {
 			isa = PBXGroup;
 			children = (
 				0D8D8D8026B0A5270013FB63 /* NetworkManager.swift */,
 			);
-			path = "Network Call";
+			path = Network;
 			sourceTree = "<group>";
 		};
 		0D8D8D8226B0A6340013FB63 /* Helper & Extension */ = {
@@ -108,6 +110,15 @@
 				0D8D8D8326B0A6450013FB63 /* CatError.swift */,
 			);
 			path = "Helper & Extension";
+			sourceTree = "<group>";
+		};
+		9BAA23AE26B0B858008216DD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0D8D8D7026B09E960013FB63 /* Assets.xcassets */,
+				0D8D8D7526B09E960013FB63 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,8 +193,9 @@
 				0D8D8D8126B0A5270013FB63 /* NetworkManager.swift in Sources */,
 				0D8D8D6F26B09E940013FB63 /* ContentView.swift in Sources */,
 				0D8D8D8426B0A6450013FB63 /* CatError.swift in Sources */,
+				9BAA23B026B0B910008216DD /* CatCompareViewModel.swift in Sources */,
 				0D8D8D6D26B09E940013FB63 /* CatCompareSwiftUIApp.swift in Sources */,
-				0D8D8D7F26B0A4D70013FB63 /* CatBreed.swift in Sources */,
+				0D8D8D7F26B0A4D70013FB63 /* Cat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +327,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CatCompareSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 5L2PGYP5GB;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = CatCompareSwiftUI/Info.plist;
+				INFOPLIST_FILE = CatCompareSwiftUI/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -337,7 +349,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CatCompareSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 5L2PGYP5GB;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = CatCompareSwiftUI/Info.plist;
+				INFOPLIST_FILE = CatCompareSwiftUI/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
