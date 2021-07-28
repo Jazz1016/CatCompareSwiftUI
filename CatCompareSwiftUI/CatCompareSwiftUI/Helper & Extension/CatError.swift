@@ -12,6 +12,7 @@ enum CatError: LocalizedError {
     case thrownError(Error)
     case noData
     case unableToDecode
+    
     var errorDescription: String? {
         switch self {
         case .thrownError(let error):
